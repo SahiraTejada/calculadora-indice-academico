@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+body{
+    overflow: hidden;
+}
+
+.splitScreen {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.topPane {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bottomPane {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.topPane,
+.bottomPane {
+    height: 100vh;
+    width: 100%;
+}
+
+.topPane {
+    background-image: url('../../imgs/Panel.png');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+
+}
+
+.title{
+    font-size: 2.2rem;
+    color: #444 !important;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.bottomPane{
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 130px;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+.btn{
+
+    box-shadow: none !important;
+    width: 150px;
+        background-color:#3490ef;
+        border: none;
+        outline: none;
+        height: 49px;
+        border-radius: 49px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 20px;
+}
+
+.reset {
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    
+}
+
+.newtitle{
+        font-size: 2.2rem;
+        margin-top: 70px;
+        margin-right: 50px;
+        
+}
+
+.btn-transparent{
+    margin: 0;
+        background: none;
+        border: 2px solid #fff;
+        width: 130px;
+        height: 41px;
+        font-weight: 600;
+        font-size: 0.8rem;
+}
+
+
+.LoginImage-container{
+    top: 0;
+    left: 0;
+}
+
+img{
+    top: -219px;
+    height: 380px;
+   left: 5px;
+}
+
+.question{
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
