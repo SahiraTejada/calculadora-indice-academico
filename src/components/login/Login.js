@@ -1,6 +1,6 @@
 import React from 'react'
  import  './Login.css';
- import {Container, Row,Col,Form, Button, Breadcrumb,InputGroup,FormControl} from 'react-bootstrap';
+ import {Form, Button, Breadcrumb} from 'react-bootstrap';
  import LoginImage from '../../imgs/Reading.svg';
  import { AiFillQuestionCircle } from 'react-icons/ai';
  import {  SiSamsungpay } from 'react-icons/si';
