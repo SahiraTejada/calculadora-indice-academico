@@ -40,10 +40,7 @@ function Login() {
                  ¿Olvidaste tu contraseña?
                 </a>
     </div>
-   
-
 </Form>
-
  <div className='question position-fixed'>
    <Breadcrumb>
       <Breadcrumb.Item href='#'>
