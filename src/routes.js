@@ -18,14 +18,14 @@ const routes = [
   {
     name: "Tablero",
     layout: "/admin",
-    path: "/default",
+    path: "/tablero",
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: Tablero,
   },
   {
     name: "Asignaturas",
     layout: "/admin",
-    path: "/nft-marketplace",
+    path: "/asignaturas",
     icon: (
       <Icon
         as={BiBookBookmark}
@@ -41,20 +41,20 @@ const routes = [
     name: "Calificaciones",
     layout: "/admin",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
-    path: "/data-tables",
+    path: "/calificaciones",
     component: Calificaciones,
   },
   {
     name: "Usuarios",
     layout: "/admin",
-    path: "/profile",
+    path: "/usuarios",
     icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
     component: Usuarios,
   },
   {
     name: "Sign In",
     layout: "/auth",
-    path: "/sign-in",
+    path: "/login",
     icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
   },
