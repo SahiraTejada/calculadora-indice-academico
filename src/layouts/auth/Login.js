@@ -10,7 +10,7 @@ import React from 'react'
  import { Button} from '@chakra-ui/react';
  import LoginImage from '../../imgs/Reading.svg';
  import { AiFillQuestionCircle } from 'react-icons/ai';
- import {  SiSamsungpay } from 'react-icons/si';
+ import {  FaBookReader} from 'react-icons/fa';
 
 function Login() {
   return (
@@ -24,7 +24,7 @@ function Login() {
         </Box>
         < Box className='bottomPane' textAlign='center'  >
           <Box position={'relative'} left={115}>
-            <SiSamsungpay color="#3884e7" size={60}></SiSamsungpay></Box>
+            < FaBookReader color="#3884e7" size={60}/> </Box>
          <h2 className='title'>Login</h2>
           <form>
   <Box mb={6}>
