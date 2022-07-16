@@ -46,7 +46,7 @@ export default function UserReports() {
             />
           }
           name='Usuarios'
-          value='12,336'
+          value='12,338'
         />
   
         <MiniStatistics

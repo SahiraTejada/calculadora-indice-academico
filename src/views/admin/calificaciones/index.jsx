@@ -16,7 +16,7 @@ import {
 import Card from "../../../components/card/Card";
 
 // Assets
-import ActionsBar from "./components/Actionsbar/ActionsBar";
+import ActionsBar from "../../../components/Actionsbar/ActionsBar";
 import SubjectTable from "../marketplace/components/SubjectTable";
 
 
@@ -24,10 +24,10 @@ import SubjectTable from "../marketplace/components/SubjectTable";
 
 
 
-export default function Marketplace() {
+export default function calificaciones() {
   // Chakra Color Mode
-  const textColor = useColorModeValue("secondaryGray.900", "white");
-  const textColorBrand = useColorModeValue("brand.500", "white");
+
+ 
   return (
     <Box pt={{ base: "180px", md: "80px", xl: "80px" }}>
       {/* Main Fields */}
@@ -45,6 +45,12 @@ export default function Marketplace() {
 
               
             </SimpleGrid>
+
+            <Card height={456}>
+              nlnnm
+            </Card>
+
+
 
           </Flex>
        

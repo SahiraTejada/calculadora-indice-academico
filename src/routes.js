@@ -1,7 +1,8 @@
 import React from "react";
 
 import { Icon } from "@chakra-ui/react";
-import {MdBarChart,MdPerson,MdHome,MdLock,} from "react-icons/md";
+import {MdBarChart,MdPerson,MdHome} from "react-icons/md";
+import {GoSignOut} from "react-icons/go";
 import {BiBookBookmark} from "react-icons/bi";
 
 // Admin Imports
@@ -52,10 +53,10 @@ const routes = [
     component: Usuarios,
   },
   {
-    name: "Sign In",
+    name: "Salir",
     layout: "/auth",
     path: "/login",
-    icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
+    icon: <Icon as={GoSignOut} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
   },
 

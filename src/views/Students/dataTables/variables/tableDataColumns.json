@@ -1,0 +1,26 @@
+[
+  {
+    "clave":"CBM 200",
+    "nombre": "Algebra Lineal", 
+    "profesor": "Antonio Estefan",
+    "creditos": 5  
+  },
+  {
+    "clave":"IDS 300",
+    "nombre": "Programación I", 
+    "profesor": "Rosario Gúzman",
+    "creditos": 3  
+  },
+  {
+    "clave":"CBM 200",
+    "nombre": "Algebra Lineal", 
+    "profesor": "Antonio Estefan",
+    "creditos": 5  
+  },
+  {
+    "clave":"IDS 300",
+    "nombre": "Programación I", 
+    "profesor": "Rosario Gúzman",
+    "creditos": 3  
+  }
+]
