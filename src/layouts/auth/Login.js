@@ -1,6 +1,5 @@
 import React from 'react'
  import  '../../css/login.css';
- import { Breadcrumb} from 'react-bootstrap';
  import {
   FormControl,
   FormLabel,
@@ -9,12 +8,11 @@ import React from 'react'
 } from '@chakra-ui/react';
  import { Button} from '@chakra-ui/react';
  import LoginImage from '../../imgs/Reading.svg';
- import { AiFillQuestionCircle } from 'react-icons/ai';
  import {  FaBookReader} from 'react-icons/fa';
 
 function Login() {
   return (
-   <>
+  
 <Box className='splitScreen'>
         <Box className='topPane' textAlign='center'>
        
@@ -28,37 +26,36 @@ function Login() {
          <h2 className='title'>Login</h2>
           <form>
   <Box mb={6}>
+    {/*imput para el usuario*/}
   <FormControl className='form-control'>
-  <Input id='email' type='email' borderRadius={50} variant='outline' placeholder='Usuario' />
-  
+  <Input id='usuario'  borderRadius={50} variant='outline' placeholder='Usuario' />
 </FormControl>
 </Box>
   <Box mb={6}>
+      {/*imput para el contrasena*/}
   <FormControl className='form-control'>
-  <Input id='email' type='password'  borderRadius={50} variant='outline' placeholder='Contrasena' />
+  <Input id='contraseña' type='password'  borderRadius={50} variant='outline' placeholder='Contraseña' />
 </FormControl>
+{/*Text para indicar si el usuario y contraseña*/}
  <Text mt={4}>El usuario o contraseña no son correctos</Text>
 </Box>
 
+{/*Boton para acceder a las diferentes dashboard*/}
   <Button type="submit" className='btn' variant='solid'>
     Acceder
   </Button>
+
+  {/*Link para poder recuperar  contraseña*/}
     < Box>
           <a href='#' className='reset'>
                  ¿Olvidaste tu contraseña?
                 </a>
     </ Box>
 </form>
- < Box className='question' position={'fixed'}>
-   <Breadcrumb>
-      <Breadcrumb.Item href='#'>
-        <AiFillQuestionCircle color="#3490ef" size={30}/>
-      </Breadcrumb.Item>
-    </Breadcrumb>
-    </ Box>
+ 
         </ Box>
     </Box>
-    </>
+   
   )
 }
 

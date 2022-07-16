@@ -15,6 +15,7 @@ import Calificaciones from "./views/admin/calificaciones";
 // Auth Imports
 import SignInCentered from "./views/auth/signIn";
 
+
 const routes = [
   {
     name: "Tablero",
