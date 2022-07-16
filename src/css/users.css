@@ -1,0 +1,38 @@
+.splitScreen {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.topPane {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bottomPane {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.topPane,
+.bottomPane {
+   
+    width: 100%;
+}
+
+
+.title-action{
+    margin-top: 23px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.space{
+    
+    margin-right: 80px;
+    
+}

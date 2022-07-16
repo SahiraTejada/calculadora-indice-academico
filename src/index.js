@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-import AuthLayout from "./layouts/auth";
+import AuthLayout from "./layouts/auth/Login";
 import AdminLayout from "./layouts/admin";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme/theme";
+
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>

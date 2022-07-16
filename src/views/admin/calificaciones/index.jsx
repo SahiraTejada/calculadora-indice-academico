@@ -1,39 +1,60 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
-
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2022 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
 // Chakra imports
-import { Box, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 
-export default function Settings() {
+// Chakra imports
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  Link,
+  Text,
+  useColorModeValue,
+  SimpleGrid,
+} from "@chakra-ui/react";
+
+import Card from "../../../components/card/Card";
+
+// Assets
+import ActionsBar from "./components/Actionsbar/ActionsBar";
+import SubjectTable from "../marketplace/components/SubjectTable";
+
+
+
+
+
+
+export default function Marketplace() {
   // Chakra Color Mode
+  const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColorBrand = useColorModeValue("brand.500", "white");
   return (
-    <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-      <SimpleGrid
-        mb='20px'
-        columns={{ sm: 1, md: 2 }}
-        spacing={{ base: "20px", xl: "20px" }}>
-     mocfdnvfnvr
-      </SimpleGrid>
+    <Box pt={{ base: "180px", md: "80px", xl: "80px" }}>
+      {/* Main Fields */}
+        <Flex
+          flexDirection='column'
+          gridArea={{ xl: "1 / 1 / 2 / 3", "2xl": "1 / 1 / 2 / 2" }}>
+        
+          <Flex direction='column'>
+         
+            <SimpleGrid columns={1} gap='20px'>
+              <ActionsBar></ActionsBar>
+              <Card height={400}  >
+              <SubjectTable/></Card>
+            
+
+              
+            </SimpleGrid>
+
+          </Flex>
+       
+  
+      
+       
+        </Flex> 
+        
+       
+      {/* Delete Product */}
     </Box>
   );
 }
